@@ -1,0 +1,350 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* in case background img does not load, use this */
+    background-color: #17001c;
+    background-image: url(img/pexels-luck-galindo-544268.jpg);
+
+    /* Can change these depending on design choice */
+    /*background-size: cover;*/
+    background-attachment: fixed;
+
+    color: white;
+
+    /* Provides the font that all children will inherit */
+    font-family: Century Gothic;
+
+    /* CSS reset */
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: block;
+    /* Pad around children (img and text) */
+    padding: 0px 20px 50px 20px;
+
+    /* create a translucent black background */
+    background-color: rgba(0,0,0,0.7);
+
+    /* Fixed width and auto left/right margins allows for centering */
+    width: 1300px;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* Used to create divisions of centered elements */
+div.centered{
+    display: block;
+    text-align: center;
+}
+
+/* Make list items default to inline blocks to position on same line */
+li{
+    display: inline-block;
+    margin: 0px auto;
+}
+
+/* For all section headings */
+h2{
+    display: inline-block;
+    font-size: 35px;
+    padding: 10px;
+    margin: 5px;
+    background-image: linear-gradient(to right, white, white);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% 3px;
+    transition: background-size .3s ease;
+}
+/* Simple underline animation on hover */
+h2:hover{
+    background-size: 100% 3px;
+}
+
+h3{
+    font-size: 32px;
+    padding-top: 15px;
+}
+
+h4{
+    font-size: 26px;
+}
+
+p{
+    font-size: 24px;
+}
+
+/* Line break formatting */
+hr{
+    color: white;
+    background-color: white;
+    height: 2px;
+}
+
+a:visited, a:link{
+    color: white;
+}
+
+/* Header with name*/
+header h1{
+    display: inline-block;
+    margin: 20px 20px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Navigation bar (child of header) */
+.main-nav {
+    font-size: 24px;
+
+    /* Reposition to the top right of viewport */
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+/* Nav bar list items */
+.main-nav li{
+    display: inline-block;
+}
+
+/* The links on each list item on the nav bar */
+.main-nav a{
+    color: white;
+    text-decoration-line: none;
+    padding: 20px;
+}
+
+.main-nav a:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Format drop down menu from main nav bar */
+
+.projects-dropdown .dropdown-content{
+    /* By default, hide dropdown menu */
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    min-width: 200px;
+    top: 72px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 12px 16px;
+}
+
+/* Show dropdown menu on hover */
+.projects-dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Change projects background while dropdown menu is active */
+.projects-dropdown:hover .dropdown{
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* About Section formatting */
+section.about{
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+
+/* Photo of Me */
+.about img{
+    position: relative;
+    border-radius: 50%;
+    height: 400px;
+    bottom: 0px;
+    transition: bottom 0.2s;
+}
+
+/* Simple hop animation when image is hovered */ 
+.about img:hover{
+    bottom: 5px;
+}
+
+.about .img-container{
+    float:left;
+    padding-right: 40px;
+}
+
+/* Greeting tag */
+.about h3{
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    right: 40px;
+}
+
+.name{
+    font-weight: bold;
+    color: rgb(0, 132, 255);
+}
+
+.name:hover{
+    font-size: 110%;
+}
+
+/* Skills Section Formatting */
+.box1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    margin: 20px 10px;
+}
+
+.border{
+    border: 5px solid white;
+    border-radius: 25%;
+    transition: 0.3s ease ;
+}
+
+.border:hover{
+    width: 13%;
+}
+
+/* Projects Section Formatting */
+/* Makes all links the same color (initially and clicked) */
+.projects a:visited, .projects a:link{
+    color:rgb(0, 132, 255);
+}
+
+#blackjack{
+    margin-top: 0px;
+}
+
+/* Format and centralize images */
+ul.img-container-cen{
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
+.projects img{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+img:hover{
+    bottom: 5px;
+}
+
+.blackjack li{
+    padding: 20px;
+    width: 45%;
+}
+
+.twistlock li{
+    padding: 10px;
+    width: 30%;
+}
+
+.hip-implant li{
+    padding: 10px;
+    width: 30%;
+}
+
+.hip-implant #firstpic{
+    width: 54%;
+}
+
+.hip-implant #secondpic{
+    width: 38%;
+}
+
+/* Resume Section Formatting */
+.resume a{
+    text-decoration: none;
+}
+
+.resume h3{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.resume h3:hover{
+    font-size: 210%;
+}
+
+/* Contact Section Formatting */
+.contact p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+.hide{
+    display: block;
+    position: relative;
+}
+
+.contact #mail{
+    right: 50px;
+}
+
+.contact ul{
+    height: 150px;
+}
+
+.contact li{
+    padding: 20px 60px;
+    width: 9%;
+    height: 100%;
+}
+
+.contact img{
+    position: relative;
+    max-width: 100%;
+    max-height: 70%;
+}
+
+/* Not functional */
+/*.contact img:hover + .hide{
+    display: block;
+}*/
+
+
+/* Other Formatting */
+#back-to-top{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+    border: 3px solid white;
+    border-radius: 60px;
+}
+
+/* Media Queries (Needs to be Fixed**) */
+/* For smaller devices scall fonts/imgs to viewport width */
+/* Fix this */
+@media screen and (max-width: 1350px){
+    header h1{
+        font-size: 0px;
+    }
+    h2, h3, h4, p, .about h3{
+        font-size: 2vw;
+    }
+    .main-nav{
+        font-size: 2vw;
+        right: 1vw;
+    }
+    .about img{
+        height: 30vw;
+    }
+
+    .resume h3:hover{
+        font-size: 2.2vw;
+    }
+}
+/* Make image padding and margins scaleable for small screens */

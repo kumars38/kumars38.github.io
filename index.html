@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Samarth Kumar</title>
+</head>
+<body>
+    <a id="top"></a>
+    <header>
+        <h1>Samarth Kumar</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about">About</a></li> 
+                <li><a href="#skills">Skills</a></li>
+                <li>
+                    <div class="projects-dropdown">
+                        <a class="dropdown" href="#projects">
+                            Projects
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#blackjack">Blackjack</a>
+                            <a href="#twistlock">TwistLock</a>
+                            <a href="#hip-implant">Hip Implant Prototype</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <div class="centered">
+            <h2>About Me</h2>
+        </div>
+        <div class="img-container">
+            <img src="img/GradResized.jpg" alt="Personal Photo">
+        </div>
+
+        <h3>Hello! My name is <span class="name">Samarth Kumar</span>.</h3> 
+        <p>I am a second year <strong>Software and Biomedical Engineering</strong> student at <strong>McMaster University</strong>.
+            My hobbies include working out, playing basketball, video games, and coding. <br><br>
+            I designed this personal website to learn HTML and CSS and it serves to store various academic and side projects that I have completed.
+            <br> My resume and contact information can also be found below!
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="centered">
+            <h2>Skills</h2>
+            <br>
+            <div class="box1">
+                <h4>Proficient:</h4>
+            </div>
+            <div class="box1 border">
+                <h4>Java</h4>
+            </div> 
+            <div class="box1 border">
+                <h4>Python</h4>
+            </div>
+            <div class="box1 border">
+                <h4>MATLAB</h4>
+            </div>
+            <!--div class="box1 border">
+                <h4>Autodesk Inventor</h4>
+            </div>-->
+            <div class="box1 border">
+                <h4>MS Office</h4>
+            </div>
+
+            <br>
+            <div class="box1">
+                <h4>Familiar:</h4>
+            </div>
+            <div class="box1 border">
+                <h4>C++</h4>
+            </div>
+            <div class="box1 border">
+                <h4>Bash</h4>
+            </div>
+            <div class="box1 border">
+                <h4>Assembly</h4>
+            </div>
+            <div class="box1 border">
+                <h4>HTML/CSS</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="centered">
+            <h2>Projects</h2>
+        </div>
+
+        <h3 id="blackjack">Blackjack</h3>
+
+        <p><em>Source code can be found on my <a href="https://github.com/kumars38/blackjack" target="_blank">GitHub</a>,
+            along with a standalone .jar which can be played. </em>
+        </p>
+        <hr>
+        <p>
+            A simple blackjack game coded in <strong>Java</strong> where a player faces the dealer.
+            The dealer makes appropriate decisions as found in a real casino.
+            It was created to practice OOP and designing a GUI (graphical user interface). 
+        </p>
+
+        <ul class="blackjack img-container-cen">
+            <!--Update links-->
+            <li><img src="https://i.ibb.co/5nFP5YN/a.png" alt="Blackjack Demo 1"></li>
+            <li><img src="https://i.ibb.co/KDcFrCL/b.png" alt="Blackjack Demo 2"></li>
+        </ul>
+
+        <h3 id="twistlock">TwistLock</h3>
+        <hr>
+        <p> This was an academic project in which our team of 4 had to redesign an ostomy bag
+            based on difficulties that an ileostomy patient was facing. 
+            She suffered from rheumatoid arthritis, 
+            lacking the strength and dexterity in her joints to use a traditional ostomy bag lock.
+            She also needed a device that felt secure at all times with no concerns for leakage. <br><br>
+            We proposed and designed the <em>TwistLock</em>, a redesigned lock which uses a twisting motion 
+            similar to a bottle cap. Rather than the conventional snap mechanism, 
+            lightly screwing in the components allows for a more suitable experience for patients with arthritis. <br><br>
+            Components were modelled in <strong>Autodesk Inventor</strong> and 3D-printed.
+
+        </p>
+
+        <ul class="twistlock img-container-cen">
+            <li><img src="img/V3_connected.JPG"      alt="TwistLock Demo 1"></li>
+            <li><img src="img/V3_bagAndBarrier.JPG"  alt="TwistLock Demo 2"></li>
+            <li><img src="img/V3_demo2.JPG"          alt="TwistLock Demo 3"></li>
+        </ul>
+
+        <h3 id="hip-implant">Hip Implant Prototype</h3>
+        <hr>
+        <p>
+            Based on a patient summary and x-rays, our team of 5 designed a custom hip implant.
+            The patient had an irregularly shaped acetabulum (hip socket). This prompted us
+            to use an elongated, avocado-shaped acetabular cup, which was the key design feature of the implant.
+            <br><br>
+
+            4 components were used: the acetabular cup, intermediate cup, inner lining, and femoral stem. <br> 
+            These were all modelled in <strong>Autodesk Inventor</strong> and 3D-printed.
+            <br><br>
+
+            We also created a program in <strong>Python</strong> that could calculate several metrics including 
+            the number of years until risk of fracture, stress amplitude, and minimum stem diameter.
+            These calculations were based on patient info, implant dimensions, and proposed materials. 
+        </p>
+
+        <ul class="hip-implant img-container-cen">
+            <li id="firstpic"><img src="img/Caps-together.png"        alt="Hip Implant Model 1"></li>
+            <li id="secondpic"><img src="img/Everything-Together.png" alt="Hip Implant Model 2"></li>
+            <br>
+            <li><img src="img/Individual_Components.JPG" alt="Hip Implant Printed 1"></li>
+            <li><img src="img/Stem_and_Cup_Detached.JPG" alt="Hip Implant Printed 2"></li>
+            <li><img src="img/Stem_and_Cup.JPG"          alt="Hip Implant Printed 3"></li>
+        </ul>
+
+    </section>
+
+    <section class="resume" id="resume">
+        <div class="centered">
+            <h2>Resume</h2><br>
+            <a href="resume/resume_samarth_kumar.pdf" target="_blank">
+                <h3>Click here to view .pdf</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="centered">
+            <h2>Contact</h2><br>
+            <ul class="img-container-cen">
+                <li>
+                    <a href="mailto:kumars38@mcmaster.ca" target="_blank">
+                        <img src="img/gmail-logo.png" alt="My Email">
+                    </a>
+                    <p class="hide" id="mail">kumars38@mcmaster.ca</p>
+                </li>
+                <li>
+                    <img src="img/phone-logo-2.png" alt="My Phone Number">
+                    <p class="hide">289-828-3693</p>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kumars38/" target="_blank">
+                        <img src="img/linkedin-logo.png" alt="My LinkedIn Page">
+                        <p class="hide">LinkedIn</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/kumars38" target="_blank">
+                        <img src="img/github-logo-2.png" alt="My GitHub">
+                        <p class="hide">GitHub</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="centered">
+        <a href="#top">
+            <h3 id="back-to-top">Back to Top</h3>
+        </a>
+        <p>Updated: Jan. 10th, 2021</p>
+    </div>
+</body>
+</html>
